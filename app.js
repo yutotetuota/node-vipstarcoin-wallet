@@ -7,6 +7,7 @@ var express = require('express')
   , https = require('https')
   , fs = require('fs')
   , path = require('path')
+  , auth = require('./auth')
   , server_proxy = require('./server_proxy.js');
 
 var options = {
@@ -24,6 +25,7 @@ app.configure(function(){
   app.use(express.methodOverride());
   app.use(express.static(path.join(__dirname, 'public')));
   app.use(app.router);
+  app.use(auth);
 });
 
 app.configure('development', function(){
