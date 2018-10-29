@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "express": "3.1.0",
-    "bitcoin": "~1.6.2"
+    "node-vipstarcoin": "~1.6.2",
+    "basic-auth": "*"
   }
 }
