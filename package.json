@@ -1,5 +1,5 @@
 {
-  "name": "application-name",
+  "name": "node-vipstarcoin-wallet",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "express": "3.1.0",
-    "node-vipstarcoin": "~1.6.2",
+    "node-vipstarcoin": "git:github.com/yutotetuota/node-vipstarcoin",
     "basic-auth": "*"
   }
 }
