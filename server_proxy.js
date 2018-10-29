@@ -1,7 +1,7 @@
-var bitcoin = require('bitcoin');
+var vipstarcoin = require('node-vipstarcoin');
 var config = require('./config.js');
 
-var client = new bitcoin.Client(config.server);
+var client = new vipstarcoin.Client(config.server);
 
 exports.index = function(req, res){
 
