@@ -4,16 +4,12 @@
  */
 
 var express = require('express')
-  , https = require('https')
+  , http = require('http')
   , fs = require('fs')
   , path = require('path')
   , auth = require('./auth')
   , server_proxy = require('./server_proxy.js');
 
-var options = {
-  key: fs.readFileSync('./key.pem'),
-  cert: fs.readFileSync('./cert.pem')
-};
 
 var app = express();
 
@@ -34,6 +30,6 @@ app.configure('development', function(){
 
 app.post('/cmd', server_proxy.index);
 
-https.createServer(options,app).listen(app.get('port'), function(){
+http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
