@@ -1,4 +1,4 @@
-A Bitcoin Wallet based on NodeJS and Bitcoind RPC API
+A VIPSTARCOIN Wallet based on NodeJS and VIPSTARCOINd RPC API
 
 ![Screenshot](http://s22.postimg.org/sa9eq44wt/sc3.jpg)
 
@@ -13,15 +13,15 @@ Plan:
 
 How to use it:
 
-1. install bitcoind
+1. install VIPSTARCOINd
 
-2. config bitcond to accept RPC call
+2. config VIPSTARCOINd to accept RPC call
 
 ```
-vim ~/.bitcoin/bitcoin.conf
+vim ~/.VIPSTARCOIN/VIPSTARCOIN.conf
 ```
 
-3. git clone git@github.com:lancehub/nodewallet.git
+3. git clone https://github.com/yutotetuota/nodewallet.git
 
 4. copy config.sample.js to config.js and edit config.js add your username password to it
 
@@ -30,12 +30,8 @@ cp config.sample.js config.js
 vim config.js
 ```
 
-5. npm install
+5. edit auth.js username and password
 
-6. generate key/cert for https
+6. npm install
 
-```
-openssl req -x509 -days 365 -nodes -newkey rsa:1024 -keyout key.pem -out cert.pem
-```
-
-7. node app and then visit: https://yourserver:9000
+7. node app and then visit: https://yourserver:8080
