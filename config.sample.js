@@ -1,7 +1,7 @@
 var config = {
   server:{
-    host: 'localhost',
-    port: 18332, //18322 is testnet, 8322 is for real
+    host: '127.0.0.1',
+    port: 31916, //32916 is testnet, 31916 is for real
     user: 'username',
     pass: 'password'
   }
