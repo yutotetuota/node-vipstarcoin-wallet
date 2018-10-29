@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "express": "3.1.0",
-    "node-vipstarcoin": "git:github.com/yutotetuota/node-vipstarcoin",
+    "node-vipstarcoin": "git:github.com/yutotetuota/node-vipstarcoin.git",
     "basic-auth": "*"
   }
 }
